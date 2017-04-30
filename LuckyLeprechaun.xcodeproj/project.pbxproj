@@ -13,6 +13,8 @@
 		BCE9BB9E1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */; };
 		BCE9BBA01EB6A51300B2D4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */; };
 		BCE9BBA31EB6A51300B2D4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BBA11EB6A51300B2D4AA /* LaunchScreen.storyboard */; };
+		BCE9BBAF1EB6A5CC00B2D4AA /* Ring of Kerry.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BBAE1EB6A5CC00B2D4AA /* Ring of Kerry.otf */; };
+		BCE9BBB21EB6A72300B2D4AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE9BBB11EB6A72300B2D4AA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE9BBA21EB6A51300B2D4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCE9BBA41EB6A51300B2D4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE9BBAE1EB6A5CC00B2D4AA /* Ring of Kerry.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ring of Kerry.otf"; path = "sharkshock_ring-of-kerry/Ring of Kerry.otf"; sourceTree = "<group>"; };
+		BCE9BBB11EB6A72300B2D4AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE9BBB21EB6A72300B2D4AA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				BCE9BB941EB6A51300B2D4AA /* LuckyLeprechaun */,
 				BCE9BB931EB6A51300B2D4AA /* Products */,
+				BCE9BBB01EB6A72300B2D4AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +62,56 @@
 		BCE9BB941EB6A51300B2D4AA /* LuckyLeprechaun */ = {
 			isa = PBXGroup;
 			children = (
+				BCE9BBAD1EB6A55600B2D4AA /* Resources */,
+				BCE9BBAC1EB6A53700B2D4AA /* Model */,
+				BCE9BBAB1EB6A53000B2D4AA /* Controller */,
+				BCE9BBAA1EB6A52A00B2D4AA /* View */,
 				BCE9BB951EB6A51300B2D4AA /* AppDelegate.swift */,
-				BCE9BB971EB6A51300B2D4AA /* ViewController.swift */,
 				BCE9BB991EB6A51300B2D4AA /* Main.storyboard */,
-				BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */,
 				BCE9BBA11EB6A51300B2D4AA /* LaunchScreen.storyboard */,
+				BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */,
 				BCE9BBA41EB6A51300B2D4AA /* Info.plist */,
-				BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */,
 			);
 			path = LuckyLeprechaun;
+			sourceTree = "<group>";
+		};
+		BCE9BBAA1EB6A52A00B2D4AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BCE9BBAB1EB6A53000B2D4AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9BB971EB6A51300B2D4AA /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCE9BBAC1EB6A53700B2D4AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCE9BBAD1EB6A55600B2D4AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9BBAE1EB6A5CC00B2D4AA /* Ring of Kerry.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BCE9BBB01EB6A72300B2D4AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9BBB11EB6A72300B2D4AA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +146,7 @@
 				TargetAttributes = {
 					BCE9BB911EB6A51300B2D4AA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4NX565UCJ9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,6 +176,7 @@
 			files = (
 				BCE9BBA31EB6A51300B2D4AA /* LaunchScreen.storyboard in Resources */,
 				BCE9BBA01EB6A51300B2D4AA /* Assets.xcassets in Resources */,
+				BCE9BBAF1EB6A5CC00B2D4AA /* Ring of Kerry.otf in Resources */,
 				BCE9BB9B1EB6A51300B2D4AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4NX565UCJ9;
 				INFOPLIST_FILE = LuckyLeprechaun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rottenweilerllc.LuckyLeprechaun;
@@ -278,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4NX565UCJ9;
 				INFOPLIST_FILE = LuckyLeprechaun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rottenweilerllc.LuckyLeprechaun;
