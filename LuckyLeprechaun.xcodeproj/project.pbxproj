@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCE9BB961EB6A51300B2D4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BB951EB6A51300B2D4AA /* AppDelegate.swift */; };
+		BCE9BB981EB6A51300B2D4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BB971EB6A51300B2D4AA /* ViewController.swift */; };
+		BCE9BB9B1EB6A51300B2D4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BB991EB6A51300B2D4AA /* Main.storyboard */; };
+		BCE9BB9E1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */; };
+		BCE9BBA01EB6A51300B2D4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */; };
+		BCE9BBA31EB6A51300B2D4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BBA11EB6A51300B2D4AA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCE9BB921EB6A51300B2D4AA /* LuckyLeprechaun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyLeprechaun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE9BB951EB6A51300B2D4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCE9BB971EB6A51300B2D4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCE9BB9A1EB6A51300B2D4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCE9BB9D1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LuckyLeprechaun.xcdatamodel; sourceTree = "<group>"; };
+		BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCE9BBA21EB6A51300B2D4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCE9BBA41EB6A51300B2D4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCE9BB8F1EB6A51300B2D4AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCE9BB891EB6A51300B2D4AA = {
+			isa = PBXGroup;
+			children = (
+				BCE9BB941EB6A51300B2D4AA /* LuckyLeprechaun */,
+				BCE9BB931EB6A51300B2D4AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCE9BB931EB6A51300B2D4AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9BB921EB6A51300B2D4AA /* LuckyLeprechaun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCE9BB941EB6A51300B2D4AA /* LuckyLeprechaun */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9BB951EB6A51300B2D4AA /* AppDelegate.swift */,
+				BCE9BB971EB6A51300B2D4AA /* ViewController.swift */,
+				BCE9BB991EB6A51300B2D4AA /* Main.storyboard */,
+				BCE9BB9F1EB6A51300B2D4AA /* Assets.xcassets */,
+				BCE9BBA11EB6A51300B2D4AA /* LaunchScreen.storyboard */,
+				BCE9BBA41EB6A51300B2D4AA /* Info.plist */,
+				BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */,
+			);
+			path = LuckyLeprechaun;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCE9BB911EB6A51300B2D4AA /* LuckyLeprechaun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE9BBA71EB6A51300B2D4AA /* Build configuration list for PBXNativeTarget "LuckyLeprechaun" */;
+			buildPhases = (
+				BCE9BB8E1EB6A51300B2D4AA /* Sources */,
+				BCE9BB8F1EB6A51300B2D4AA /* Frameworks */,
+				BCE9BB901EB6A51300B2D4AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyLeprechaun;
+			productName = LuckyLeprechaun;
+			productReference = BCE9BB921EB6A51300B2D4AA /* LuckyLeprechaun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCE9BB8A1EB6A51300B2D4AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dee Dee Rich";
+				TargetAttributes = {
+					BCE9BB911EB6A51300B2D4AA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCE9BB8D1EB6A51300B2D4AA /* Build configuration list for PBXProject "LuckyLeprechaun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCE9BB891EB6A51300B2D4AA;
+			productRefGroup = BCE9BB931EB6A51300B2D4AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCE9BB911EB6A51300B2D4AA /* LuckyLeprechaun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCE9BB901EB6A51300B2D4AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE9BBA31EB6A51300B2D4AA /* LaunchScreen.storyboard in Resources */,
+				BCE9BBA01EB6A51300B2D4AA /* Assets.xcassets in Resources */,
+				BCE9BB9B1EB6A51300B2D4AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCE9BB8E1EB6A51300B2D4AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE9BB981EB6A51300B2D4AA /* ViewController.swift in Sources */,
+				BCE9BB961EB6A51300B2D4AA /* AppDelegate.swift in Sources */,
+				BCE9BB9E1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCE9BB991EB6A51300B2D4AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE9BB9A1EB6A51300B2D4AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCE9BBA11EB6A51300B2D4AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE9BBA21EB6A51300B2D4AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCE9BBA51EB6A51300B2D4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCE9BBA61EB6A51300B2D4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCE9BBA81EB6A51300B2D4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LuckyLeprechaun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rottenweilerllc.LuckyLeprechaun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCE9BBA91EB6A51300B2D4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LuckyLeprechaun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rottenweilerllc.LuckyLeprechaun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCE9BB8D1EB6A51300B2D4AA /* Build configuration list for PBXProject "LuckyLeprechaun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE9BBA51EB6A51300B2D4AA /* Debug */,
+				BCE9BBA61EB6A51300B2D4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE9BBA71EB6A51300B2D4AA /* Build configuration list for PBXNativeTarget "LuckyLeprechaun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE9BBA81EB6A51300B2D4AA /* Debug */,
+				BCE9BBA91EB6A51300B2D4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCE9BB9D1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodel */,
+			);
+			currentVersion = BCE9BB9D1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodel */;
+			path = LuckyLeprechaun.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BCE9BB8A1EB6A51300B2D4AA /* Project object */;
+}
