@@ -32,6 +32,9 @@
                                     <constraint firstAttribute="height" constant="50" id="Rp5-uo-ljF"/>
                                 </constraints>
                                 <state key="normal" image="compass"/>
+                                <connections>
+                                    <action selector="userLocationUpdatedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkI-qK-kti"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paO-qg-7Pf">
                                 <rect key="frame" x="162" y="597" width="50" height="50"/>
