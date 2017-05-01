@@ -41,26 +41,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func locationAuthStatus() {
         //Setting location authorization status
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            self.mapView.showsUserLocation = true
-            self.manager.startUpdatingLocation()
-            
-            Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
-                //Spawning annotations which will soon be monsters and items
-                if let coordinate = self.manager.location?.coordinate {
-                    
-                    let randomMonster = Int(arc4random_uniform(UInt32(self.monsters.count)))
-                    let monster = self.monsters[randomMonster]
-                    
-                    let annotation = MonsterAnnotation(coordinate: coordinate, monster: monster)
-                    annotation.coordinate = coordinate
-                    
-                    //To make it a little more random instead of just following the user's location
-                    annotation.coordinate.latitude += (Double(arc4random_uniform(1000)) - 500) / 300000.0
-                    annotation.coordinate.longitude += (Double(arc4random_uniform(1000)) - 500) / 300000.0
-                    
-                    self.mapView.addAnnotation(annotation)
-                }
-            })
+            setUpMap()
             
         } else {
             self.manager.requestWhenInUseAuthorization()
@@ -68,9 +49,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
     }
     
+    func setUpMap() {
+        self.mapView.showsUserLocation = true
+        self.manager.startUpdatingLocation()
+        
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
+            //Spawning annotations which will soon be monsters and items
+            if let coordinate = self.manager.location?.coordinate {
+                
+                let randomMonster = Int(arc4random_uniform(UInt32(self.monsters.count)))
+                let monster = self.monsters[randomMonster]
+                
+                let annotation = MonsterAnnotation(coordinate: coordinate, monster: monster)
+                annotation.coordinate = coordinate
+                
+                //To make it a little more random instead of just following the user's location
+                annotation.coordinate.latitude += (Double(arc4random_uniform(1000)) - 500) / 300000.0
+                annotation.coordinate.longitude += (Double(arc4random_uniform(1000)) - 500) / 300000.0
+                
+                self.mapView.addAnnotation(annotation)
+            }
+        })
+
+    }
+    
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
-            mapView.showsUserLocation = true
+            setUpMap()
         }
     }
 
@@ -132,6 +137,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         if let coordinate = self.manager.location?.coordinate {
             if MKMapRectContainsPoint(mapView.visibleMapRect, MKMapPointForCoordinate(coordinate)) {
+                
+                let battle = BattleVC()
+                
+                let monster = (view.annotation as! MonsterAnnotation).monster
+                battle.monster = monster
+                self.mapView.removeAnnotation(view.annotation!)
+                self.present(battle, animated: true, completion: nil)
                 print("Capture Monster")
             } else {
                 print("Too far to catch monster")
@@ -139,10 +151,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
     }
     
+    
     //When button pressed go to user's location
     @IBAction func userLocationUpdatedButtonPressed(_ sender: Any) {
-        let region = MKCoordinateRegionMakeWithDistance(self.manager.location!.coordinate, 400, 400)
-        self.mapView.setRegion(region, animated: true)
+        if let coordinate = self.manager.location?.coordinate {
+            let region = MKCoordinateRegionMakeWithDistance(self.manager.location!.coordinate, 400, 400)
+            self.mapView.setRegion(region, animated: true)
+        }
+
     }//end of userLocUpdateBtnPressed
     
 

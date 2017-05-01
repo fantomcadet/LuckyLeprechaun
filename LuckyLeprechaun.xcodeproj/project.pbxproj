@@ -18,6 +18,8 @@
 		BCE9BBB61EB6BB5000B2D4AA /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBB51EB6BB5000B2D4AA /* StoreVC.swift */; };
 		BCE9BBB81EB6BC9700B2D4AA /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBB71EB6BC9700B2D4AA /* CDHelper.swift */; };
 		BCE9BBBA1EB6D47100B2D4AA /* MonsterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBB91EB6D47100B2D4AA /* MonsterAnnotation.swift */; };
+		BCE9BBBC1EB78CE400B2D4AA /* BattleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBBB1EB78CE400B2D4AA /* BattleVC.swift */; };
+		BCE9BBBE1EB78CF300B2D4AA /* BattleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBBD1EB78CF300B2D4AA /* BattleScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BCE9BBB51EB6BB5000B2D4AA /* StoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
 		BCE9BBB71EB6BC9700B2D4AA /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		BCE9BBB91EB6D47100B2D4AA /* MonsterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterAnnotation.swift; sourceTree = "<group>"; };
+		BCE9BBBB1EB78CE400B2D4AA /* BattleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleVC.swift; sourceTree = "<group>"; };
+		BCE9BBBD1EB78CF300B2D4AA /* BattleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			children = (
 				BCE9BB971EB6A51300B2D4AA /* ViewController.swift */,
 				BCE9BBB51EB6BB5000B2D4AA /* StoreVC.swift */,
+				BCE9BBBB1EB78CE400B2D4AA /* BattleVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */,
 				BCE9BBB71EB6BC9700B2D4AA /* CDHelper.swift */,
 				BCE9BBB91EB6D47100B2D4AA /* MonsterAnnotation.swift */,
+				BCE9BBBD1EB78CF300B2D4AA /* BattleScene.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -199,9 +205,11 @@
 			files = (
 				BCE9BB981EB6A51300B2D4AA /* ViewController.swift in Sources */,
 				BCE9BBB81EB6BC9700B2D4AA /* CDHelper.swift in Sources */,
+				BCE9BBBC1EB78CE400B2D4AA /* BattleVC.swift in Sources */,
 				BCE9BB961EB6A51300B2D4AA /* AppDelegate.swift in Sources */,
 				BCE9BBB61EB6BB5000B2D4AA /* StoreVC.swift in Sources */,
 				BCE9BB9E1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld in Sources */,
+				BCE9BBBE1EB78CF300B2D4AA /* BattleScene.swift in Sources */,
 				BCE9BBBA1EB6D47100B2D4AA /* MonsterAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

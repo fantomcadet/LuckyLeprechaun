@@ -10,6 +10,8 @@ import Foundation
 import CoreData
 import UIKit
 
+//Want to make them GPS dependent eventually not just random, need to setup a point value for defeat
+
 //Monster dB
 func makeAllMonsters() {
     
