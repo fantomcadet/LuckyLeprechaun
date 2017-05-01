@@ -25,6 +25,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //Setting location authorization status
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             self.mapView.showsUserLocation = true
+            self.manager.startUpdatingLocation()
+            
         } else {
             self.manager.requestWhenInUseAuthorization()
         }
@@ -35,6 +37,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    //Zoom in on the user's location
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let region = MKCoordinateRegionMakeWithDistance(self.manager.location!.coordinate, 1000, 1000)
+        self.mapView.setRegion(region, animated: true)
+    }
+    
+    
 
 }
 
