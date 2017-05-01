@@ -15,6 +15,9 @@
 		BCE9BBA31EB6A51300B2D4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BBA11EB6A51300B2D4AA /* LaunchScreen.storyboard */; };
 		BCE9BBAF1EB6A5CC00B2D4AA /* Ring of Kerry.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCE9BBAE1EB6A5CC00B2D4AA /* Ring of Kerry.otf */; };
 		BCE9BBB21EB6A72300B2D4AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE9BBB11EB6A72300B2D4AA /* MapKit.framework */; };
+		BCE9BBB61EB6BB5000B2D4AA /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBB51EB6BB5000B2D4AA /* StoreVC.swift */; };
+		BCE9BBB81EB6BC9700B2D4AA /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBB71EB6BC9700B2D4AA /* CDHelper.swift */; };
+		BCE9BBBA1EB6D47100B2D4AA /* MonsterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9BBB91EB6D47100B2D4AA /* MonsterAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		BCE9BBA41EB6A51300B2D4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCE9BBAE1EB6A5CC00B2D4AA /* Ring of Kerry.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ring of Kerry.otf"; path = "sharkshock_ring-of-kerry/Ring of Kerry.otf"; sourceTree = "<group>"; };
 		BCE9BBB11EB6A72300B2D4AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BCE9BBB51EB6BB5000B2D4AA /* StoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		BCE9BBB71EB6BC9700B2D4AA /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		BCE9BBB91EB6D47100B2D4AA /* MonsterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				BCE9BB971EB6A51300B2D4AA /* ViewController.swift */,
+				BCE9BBB51EB6BB5000B2D4AA /* StoreVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -94,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				BCE9BB9C1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld */,
+				BCE9BBB71EB6BC9700B2D4AA /* CDHelper.swift */,
+				BCE9BBB91EB6D47100B2D4AA /* MonsterAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,8 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE9BB981EB6A51300B2D4AA /* ViewController.swift in Sources */,
+				BCE9BBB81EB6BC9700B2D4AA /* CDHelper.swift in Sources */,
 				BCE9BB961EB6A51300B2D4AA /* AppDelegate.swift in Sources */,
+				BCE9BBB61EB6BB5000B2D4AA /* StoreVC.swift in Sources */,
 				BCE9BB9E1EB6A51300B2D4AA /* LuckyLeprechaun.xcdatamodeld in Sources */,
+				BCE9BBBA1EB6D47100B2D4AA /* MonsterAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

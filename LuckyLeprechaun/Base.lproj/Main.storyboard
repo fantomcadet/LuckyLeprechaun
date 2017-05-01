@@ -36,13 +36,16 @@
                                     <action selector="userLocationUpdatedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkI-qK-kti"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paO-qg-7Pf">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paO-qg-7Pf">
                                 <rect key="frame" x="162" y="597" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="O6E-OI-2O3"/>
                                     <constraint firstAttribute="height" constant="50" id="fXh-m4-91D"/>
                                 </constraints>
                                 <state key="normal" image="moneybag"/>
+                                <connections>
+                                    <segue destination="W8X-Dq-q3r" kind="presentation" id="Pu9-1n-trA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,7 +70,7 @@
         <!--StoreVC-->
         <scene sceneID="sv5-pN-bDr">
             <objects>
-                <viewController id="W8X-Dq-q3r" userLabel="StoreVC" sceneMemberID="viewController">
+                <viewController id="W8X-Dq-q3r" userLabel="StoreVC" customClass="StoreVC" customModule="LuckyLeprechaun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uc3-HL-cwM"/>
                         <viewControllerLayoutGuide type="bottom" id="BLt-n9-08g"/>
@@ -76,9 +79,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2YA-Xy-JFE">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2YA-Xy-JFE">
+                                <rect key="frame" x="-8" y="20" width="391" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="storeCell" rowHeight="71" id="asb-HH-35n">
+                                        <rect key="frame" x="0.0" y="28" width="391" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="asb-HH-35n" id="RbZ-8g-kLs">
+                                            <rect key="frame" x="0.0" y="0.0" width="391" height="70.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-O6-ajB">
+                                                    <rect key="frame" x="-29" y="-61" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Erb-7U-2yO"/>
+                                                        <constraint firstAttribute="height" constant="50" id="W7v-W4-9lf"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5G-5b-bZF">
                                 <rect key="frame" x="162" y="597" width="50" height="50"/>
@@ -87,22 +109,28 @@
                                     <constraint firstAttribute="width" constant="50" id="ohO-F1-h3L"/>
                                 </constraints>
                                 <state key="normal" image="map"/>
+                                <connections>
+                                    <action selector="backToMapButtonPressed:" destination="W8X-Dq-q3r" eventType="touchUpInside" id="JAJ-VE-mj3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2YA-Xy-JFE" firstAttribute="top" secondItem="uc3-HL-cwM" secondAttribute="bottom" id="DV9-RW-tBJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2YA-Xy-JFE" secondAttribute="trailing" id="Ec8-EZ-50F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2YA-Xy-JFE" secondAttribute="trailing" constant="-24" id="Ec8-EZ-50F"/>
                             <constraint firstItem="K5G-5b-bZF" firstAttribute="centerX" secondItem="XrC-Ko-jus" secondAttribute="centerX" id="Ijq-SN-FCf"/>
                             <constraint firstItem="BLt-n9-08g" firstAttribute="top" secondItem="K5G-5b-bZF" secondAttribute="bottom" constant="20" id="RkQ-d0-88w"/>
                             <constraint firstItem="BLt-n9-08g" firstAttribute="top" secondItem="2YA-Xy-JFE" secondAttribute="bottom" id="cDH-kr-o5r"/>
-                            <constraint firstItem="2YA-Xy-JFE" firstAttribute="leading" secondItem="XrC-Ko-jus" secondAttribute="leadingMargin" id="zOA-OR-swU"/>
+                            <constraint firstItem="2YA-Xy-JFE" firstAttribute="leading" secondItem="XrC-Ko-jus" secondAttribute="leadingMargin" constant="-24" id="zOA-OR-swU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2YA-Xy-JFE" id="B3L-Ub-htH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUr-P2-yJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="36"/>
+            <point key="canvasLocation" x="780" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
